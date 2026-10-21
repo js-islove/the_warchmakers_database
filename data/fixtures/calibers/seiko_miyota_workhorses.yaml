@@ -1,0 +1,117 @@
+# Family 3: Seiko 7S26 / NH35 / NH36 & Miyota Workhorse Families
+family:
+  slug: seiko-7s-nh-family
+  name: "Seiko 7S26 / 4R / NH35 Architecture Family"
+  origin_year: 1996
+
+calibers:
+  - canonical_key: "seiko:7s26"
+    display_name: "Seiko 7S26"
+    manufacturer: seiko
+    reference: "7S26"
+    aliases:
+      - { alias: "7S26A", kind: official }
+      - { alias: "7S26B", kind: official }
+      - { alias: "7S26C", kind: official }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "day", "date"]
+    envelope:
+      diameter_mm: 27.40
+      height_mm: 4.90
+      crown_position_oclock: 3
+      stem_height_mm: 1.92
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.20
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 21600
+      jewels: 21
+      power_reserve_h: 41
+      lift_angle_deg: 53.0
+      shock_protection: "Diashock"
+    production_start: 1996
+    status: discontinued
+    accessibility_score: 0.65
+    parts:
+      - { slot: balance_complete, part_number: "SII-0310-790", interchange_group: "grp:seiko_nh35_balance_721" }
+      - { slot: pallet_fork, part_number: "SII-0301-890", interchange_group: "grp:seiko_nh35_pallet_710" }
+      - { slot: escape_wheel, part_number: "SII-0251-890", interchange_group: "grp:seiko_nh35_escape_705" }
+      - { slot: mainspring, part_number: "SII-0201-790", interchange_group: "grp:seiko_nh35_mainspring_770" }
+
+  - canonical_key: "seiko:nh35a"
+    display_name: "Seiko NH35A (4R35)"
+    manufacturer: seiko
+    reference: "NH35A"
+    aliases:
+      - { alias: "NH35", kind: official }
+      - { alias: "4R35", kind: brand_reference }
+      - { alias: "4R35B", kind: brand_reference }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "quickset_date", "hacking"]
+    envelope:
+      diameter_mm: 27.40
+      height_mm: 5.32
+      crown_position_oclock: 3
+      stem_height_mm: 1.92
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.20
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 21600
+      jewels: 24
+      power_reserve_h: 41
+      lift_angle_deg: 53.0
+      shock_protection: "Diashock"
+    production_start: 2011
+    status: current
+    accessibility_score: 0.98
+    relations:
+      - { kind: DERIVED_FROM, to: "seiko:7s26", subtype: evolution, modification_degree: 2, confidence: 0.99,
+          notes: "Adds hand-winding and hacking seconds to 7S26; shares balance, pallet fork, escape wheel, and hand sizes" }
+    parts:
+      - { slot: winding_stem, part_number: "SII-0351-177", interchange_group: "grp:seiko_nh35_stem_401" }
+      - { slot: setting_lever, part_number: "SII-0383-177", interchange_group: "grp:seiko_nh35_setting_lever_443" }
+      - { slot: balance_complete, part_number: "SII-0310-177", interchange_group: "grp:seiko_nh35_balance_721" }
+      - { slot: pallet_fork, part_number: "SII-0301-890", interchange_group: "grp:seiko_nh35_pallet_710" }
+      - { slot: escape_wheel, part_number: "SII-0251-890", interchange_group: "grp:seiko_nh35_escape_705" }
+      - { slot: mainspring, part_number: "SII-0201-790", interchange_group: "grp:seiko_nh35_mainspring_770" }
+
+  - canonical_key: "seiko:nh36a"
+    display_name: "Seiko NH36A (4R36 Day-Date)"
+    manufacturer: seiko
+    reference: "NH36A"
+    aliases:
+      - { alias: "NH36", kind: official }
+      - { alias: "4R36", kind: brand_reference }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "quickset_day", "quickset_date", "hacking"]
+    envelope:
+      diameter_mm: 27.40
+      height_mm: 5.32
+      crown_position_oclock: 3
+      stem_height_mm: 1.92
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.20
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 21600
+      jewels: 24
+      power_reserve_h: 41
+      lift_angle_deg: 53.0
+      shock_protection: "Diashock"
+    production_start: 2011
+    status: current
+    accessibility_score: 0.98
+    relations:
+      - { kind: DERIVED_FROM, to: "seiko:nh35a", subtype: modular_addition, modification_degree: 1, confidence: 0.99,
+          notes: "Identical to NH35A with added Day disc; 100% interchangeable stem, balance, pallet, escape wheel, and mainspring" }
+    parts:
+      - { slot: winding_stem, part_number: "SII-0351-177", interchange_group: "grp:seiko_nh35_stem_401" }
+      - { slot: setting_lever, part_number: "SII-0383-177", interchange_group: "grp:seiko_nh35_setting_lever_443" }
+      - { slot: balance_complete, part_number: "SII-0310-177", interchange_group: "grp:seiko_nh35_balance_721" }
+      - { slot: pallet_fork, part_number: "SII-0301-890", interchange_group: "grp:seiko_nh35_pallet_710" }
+      - { slot: escape_wheel, part_number: "SII-0251-890", interchange_group: "grp:seiko_nh35_escape_705" }
+      - { slot: mainspring, part_number: "SII-0201-790", interchange_group: "grp:seiko_nh35_mainspring_770" }

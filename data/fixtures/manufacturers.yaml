@@ -1,0 +1,49 @@
+manufacturers:
+  - slug: eta
+    name: "ETA SA Manufacture Horlogère Suisse"
+    aliases: ["ETA", "Eta SA", "Ebauches ETA"]
+    country_code: "CH"
+    founded_year: 1856
+    roles: ["ebauche_maker", "manufacture"]
+
+  - slug: sellita
+    name: "Sellita Watch Co. SA"
+    aliases: ["Sellita", "SW"]
+    country_code: "CH"
+    founded_year: 1950
+    roles: ["ebauche_maker", "manufacture"]
+
+  - slug: valjoux
+    name: "Valjoux (Reymond Frères / ETA)"
+    aliases: ["Valjoux", "Val."]
+    country_code: "CH"
+    founded_year: 1901
+    roles: ["ebauche_maker"]
+
+  - slug: iwc
+    name: "IWC Schaffhausen"
+    aliases: ["IWC", "International Watch Co."]
+    country_code: "CH"
+    founded_year: 1868
+    roles: ["brand", "modifier", "manufacture"]
+
+  - slug: stp
+    name: "Swiss Technology Production (STP)"
+    aliases: ["STP"]
+    country_code: "CH"
+    founded_year: 2008
+    roles: ["ebauche_maker"]
+
+  - slug: seiko
+    name: "Seiko Instruments / TMI"
+    aliases: ["Seiko", "SII", "TMI"]
+    country_code: "JP"
+    founded_year: 1881
+    roles: ["manufacture", "ebauche_maker"]
+
+  - slug: miyota
+    name: "Miyota (Citizen Watch Co.)"
+    aliases: ["Miyota", "Citizen Miyota"]
+    country_code: "JP"
+    founded_year: 1959
+    roles: ["ebauche_maker", "manufacture"]

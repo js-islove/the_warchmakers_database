@@ -1,0 +1,11 @@
+from_caliber,from_name,relationship_kind,subtype,to_caliber,modification_degree,confidence,notes
+eta:2824-2,ETA 2824-2,DERIVED_FROM,evolution,eta:2824,2,0.99,Redesigned keyless works (setting lever & jumper) over original 2824
+eta:2836-2,ETA 2836-2 (Day-Date),DERIVED_FROM,modular_addition,eta:2824-2,2,0.99,Adds Day mechanism on dial side; shares almost entire base movement & regulating organ with 2824-2
+eta:2801-2,ETA 2801-2 (Manual Wind),DERIVED_FROM,modified,eta:2824-2,2,0.95,"Manual-wind no-date sibling; shares stem, keyless works, mainspring, and regulating organ with 2824-2"
+sellita:sw200-1,Sellita SW200-1,CLONE_OF,drop_in_replacement,eta:2824-2,0,0.99,"100% drop-in envelope replacement for ETA 2824-2. Keyless works, stem, mainspring, balance & date ring interchange; gear train tooth profile slightly updated in -1"
+stp:1-11,STP 1-11,CLONE_OF,drop_in_replacement,eta:2824-2,1,0.98,Drop-in replacement for ETA 2824-2 with thinner barrel arbor for 44h power reserve
+seiko:nh35a,Seiko NH35A (4R35),DERIVED_FROM,evolution,seiko:7s26,2,0.99,"Adds hand-winding and hacking seconds to 7S26; shares balance, pallet fork, escape wheel, and hand sizes"
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),DERIVED_FROM,modular_addition,seiko:nh35a,1,0.99,"Identical to NH35A with added Day disc; 100% interchangeable stem, balance, pallet, escape wheel, and mainspring"
+sellita:sw500,Sellita SW500,CLONE_OF,drop_in_replacement,valjoux:7750,0,0.99,"Direct drop-in replacement for Valjoux 7750; shares winding stem, mainspring, keyless works, and regulating parts"
+eta:7753,ETA 7753 (3-6-9 Tricompax),DERIVED_FROM,modified,valjoux:7750,2,0.99,"Relocates minute counter to 3 o'clock with corrector pusher at 10 o'clock; shares base train, stem, and escapement with 7750"
+iwc:79320,IWC 79320,DERIVED_FROM,modified,valjoux:7750,2,0.99,"IWC modified Valjoux 7750; shares winding stem, sliding pinion, setting lever, pallet fork, and escape wheel with standard 7750"

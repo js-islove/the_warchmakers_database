@@ -1,0 +1,44 @@
+original_movement,substitute_movement,fit_classification,diameter_mm,height_comparison,stem_height_mm,hand_sizes_mm,fitment_notes
+ETA 2824 (Original),ETA 2824-2,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2824 (Original),ETA 2836-2 (Day-Date),check_caseback_clearance,25.6 mm,4.6mm -> 5.05mm,1.8 mm,1.5/0.9/0.25,Taller by 0.45mm
+ETA 2824 (Original),ETA 2801-2 (Manual Wind),needs_dial_or_no_date,25.6 mm,4.6mm -> 3.35mm,1.8 mm,1.5/0.9/0.25,Date window differs
+ETA 2824 (Original),Sellita SW200-1,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2824 (Original),STP 1-11,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2824-2,ETA 2824 (Original),drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2824-2,ETA 2836-2 (Day-Date),check_caseback_clearance,25.6 mm,4.6mm -> 5.05mm,1.8 mm,1.5/0.9/0.25,Taller by 0.45mm
+ETA 2824-2,ETA 2801-2 (Manual Wind),needs_dial_or_no_date,25.6 mm,4.6mm -> 3.35mm,1.8 mm,1.5/0.9/0.25,Date window differs
+ETA 2824-2,Sellita SW200-1,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2824-2,STP 1-11,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2836-2 (Day-Date),ETA 2824 (Original),drop_in,25.6 mm,5.05mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2836-2 (Day-Date),ETA 2824-2,drop_in,25.6 mm,5.05mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2836-2 (Day-Date),ETA 2801-2 (Manual Wind),needs_dial_or_no_date,25.6 mm,5.05mm -> 3.35mm,1.8 mm,1.5/0.9/0.25,Date window differs
+ETA 2836-2 (Day-Date),Sellita SW200-1,drop_in,25.6 mm,5.05mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+ETA 2836-2 (Day-Date),STP 1-11,drop_in,25.6 mm,5.05mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+Sellita SW200-1,ETA 2824 (Original),drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+Sellita SW200-1,ETA 2824-2,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+Sellita SW200-1,ETA 2836-2 (Day-Date),check_caseback_clearance,25.6 mm,4.6mm -> 5.05mm,1.8 mm,1.5/0.9/0.25,Taller by 0.45mm
+Sellita SW200-1,ETA 2801-2 (Manual Wind),needs_dial_or_no_date,25.6 mm,4.6mm -> 3.35mm,1.8 mm,1.5/0.9/0.25,Date window differs
+Sellita SW200-1,STP 1-11,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+STP 1-11,ETA 2824 (Original),drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+STP 1-11,ETA 2824-2,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+STP 1-11,ETA 2836-2 (Day-Date),check_caseback_clearance,25.6 mm,4.6mm -> 5.05mm,1.8 mm,1.5/0.9/0.25,Taller by 0.45mm
+STP 1-11,ETA 2801-2 (Manual Wind),needs_dial_or_no_date,25.6 mm,4.6mm -> 3.35mm,1.8 mm,1.5/0.9/0.25,Date window differs
+STP 1-11,Sellita SW200-1,drop_in,25.6 mm,4.6mm -> 4.6mm,1.8 mm,1.5/0.9/0.25,"Exact case, stem, dial & hand match"
+Seiko 7S26,Seiko NH35A (4R35),check_caseback_clearance,27.4 mm,4.9mm -> 5.32mm,1.92 mm,1.5/0.9/0.2,Taller by 0.42mm
+Seiko 7S26,Seiko NH36A (4R36 Day-Date),check_caseback_clearance,27.4 mm,4.9mm -> 5.32mm,1.92 mm,1.5/0.9/0.2,Taller by 0.42mm
+Seiko NH35A (4R35),Seiko 7S26,drop_in,27.4 mm,5.32mm -> 4.9mm,1.92 mm,1.5/0.9/0.2,"Exact case, stem, dial & hand match"
+Seiko NH35A (4R35),Seiko NH36A (4R36 Day-Date),drop_in,27.4 mm,5.32mm -> 5.32mm,1.92 mm,1.5/0.9/0.2,"Exact case, stem, dial & hand match"
+Seiko NH36A (4R36 Day-Date),Seiko 7S26,drop_in,27.4 mm,5.32mm -> 4.9mm,1.92 mm,1.5/0.9/0.2,"Exact case, stem, dial & hand match"
+Seiko NH36A (4R36 Day-Date),Seiko NH35A (4R35),drop_in,27.4 mm,5.32mm -> 5.32mm,1.92 mm,1.5/0.9/0.2,"Exact case, stem, dial & hand match"
+ETA / Valjoux 7750,Sellita SW500,drop_in,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,"Exact case, stem, dial & hand match"
+ETA / Valjoux 7750,ETA 7753 (3-6-9 Tricompax),needs_dial_or_no_date,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,Date window differs
+ETA / Valjoux 7750,IWC 79320,drop_in,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,"Exact case, stem, dial & hand match"
+Sellita SW500,ETA / Valjoux 7750,drop_in,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,"Exact case, stem, dial & hand match"
+Sellita SW500,ETA 7753 (3-6-9 Tricompax),needs_dial_or_no_date,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,Date window differs
+Sellita SW500,IWC 79320,drop_in,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,"Exact case, stem, dial & hand match"
+ETA 7753 (3-6-9 Tricompax),ETA / Valjoux 7750,needs_dial_or_no_date,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,Date window differs
+ETA 7753 (3-6-9 Tricompax),Sellita SW500,needs_dial_or_no_date,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,Date window differs
+ETA 7753 (3-6-9 Tricompax),IWC 79320,needs_dial_or_no_date,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,Date window differs
+IWC 79320,ETA / Valjoux 7750,drop_in,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,"Exact case, stem, dial & hand match"
+IWC 79320,Sellita SW500,drop_in,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,"Exact case, stem, dial & hand match"
+IWC 79320,ETA 7753 (3-6-9 Tricompax),needs_dial_or_no_date,30.0 mm,7.9mm -> 7.9mm,2.5 mm,2.0/1.2/0.25,Date window differs

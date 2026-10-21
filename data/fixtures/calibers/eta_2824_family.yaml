@@ -1,0 +1,255 @@
+# Family 1: The ETA 2824 & Clones / Derivatives Family
+# Combines:
+#   1. Outer envelope specs (from spec sheets / Caliber Corner)
+#   2. Family tree links (DERIVED_FROM / CLONE_OF)
+#   3. The key repair parts from PDF "Parts List" tables (CS 401, 407, 443, 705, 710, 721, 770...)
+#      Notice how parts that can physically swap share the same `interchange_group` (part_class)!
+
+family:
+  slug: eta-2824-family
+  name: "ETA 2824 / Sellita SW200 Architecture Family"
+  origin_year: 1971
+
+calibers:
+  - canonical_key: "eta:2824"
+    display_name: "ETA 2824 (Original)"
+    manufacturer: eta
+    reference: "2824"
+    aliases:
+      - { alias: "ETA 2824", kind: official }
+      - { alias: "2824", kind: common_misnomer }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "date"]
+    envelope:
+      diameter_mm: 25.60
+      height_mm: 4.60
+      crown_position_oclock: 3
+      stem_height_mm: 1.80
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 28800
+      jewels: 25
+      power_reserve_h: 38
+      lift_angle_deg: 50.0
+      shock_protection: "Incabloc"
+    production_start: 1971
+    production_end: 1979
+    status: discontinued
+    accessibility_score: 0.25
+    parts:
+      - { slot: winding_stem, part_number: "ETA-2801-401", interchange_group: "grp:eta2801_stem_401" }
+      - { slot: mainspring, part_number: "ETA-2824-770", interchange_group: "grp:eta2824_mainspring_770" }
+      - { slot: balance_complete, part_number: "ETA-2824-721", interchange_group: "grp:eta2824_early_balance_721" }
+      - { slot: pallet_fork, part_number: "ETA-2824-710", interchange_group: "grp:eta2824_pallet_710" }
+      - { slot: escape_wheel, part_number: "ETA-2824-705", interchange_group: "grp:eta2824_escape_705" }
+
+  - canonical_key: "eta:2824-2"
+    display_name: "ETA 2824-2"
+    manufacturer: eta
+    reference: "2824-2"
+    aliases:
+      - { alias: "2824-2", kind: official }
+      - { alias: "ETA 2824/2", kind: historical }
+      - { alias: "ETA2824-2", kind: common_misnomer }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "quickset_date", "hacking"]
+    envelope:
+      diameter_mm: 25.60
+      height_mm: 4.60
+      crown_position_oclock: 3
+      stem_height_mm: 1.80
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 28800
+      jewels: 25
+      power_reserve_h: 38
+      lift_angle_deg: 50.0
+      shock_protection: "Incabloc / Etachocs"
+    production_start: 1982
+    status: current
+    accessibility_score: 0.75
+    relations:
+      - { kind: DERIVED_FROM, to: "eta:2824", subtype: evolution, modification_degree: 2, confidence: 0.99,
+          notes: "Redesigned keyless works (setting lever & jumper) over original 2824" }
+    parts:
+      # In the ETA 2824-2 PDF tech sheet, part 401 (stem) references base caliber 2801-2
+      - { slot: winding_stem, part_number: "ETA-2801-2-401", interchange_group: "grp:eta2824_2_stem_401" }
+      - { slot: setting_lever, part_number: "ETA-2824-2-443", interchange_group: "grp:eta2824_2_setting_lever_443" }
+      - { slot: setting_lever_jumper, part_number: "ETA-2824-2-445", interchange_group: "grp:eta2824_2_jumper_445" }
+      - { slot: sliding_pinion, part_number: "ETA-2824-2-407", interchange_group: "grp:eta2824_2_sliding_pinion_407" }
+      - { slot: mainspring, part_number: "ETA-2824-2-770", interchange_group: "grp:eta2824_mainspring_770" }
+      - { slot: balance_complete, part_number: "ETA-2824-2-721", interchange_group: "grp:eta2824_2_balance_721" }
+      - { slot: balance_staff, part_number: "ETA-2824-2-723", interchange_group: "grp:eta2824_2_staff_723" }
+      - { slot: pallet_fork, part_number: "ETA-2824-2-710", interchange_group: "grp:eta2824_pallet_710" }
+      - { slot: escape_wheel, part_number: "ETA-2824-2-705", interchange_group: "grp:eta2824_escape_705" }
+      - { slot: reversing_wheel, part_number: "ETA-2824-2-1488", interchange_group: "grp:eta2824_2_reversing_1488" }
+      - { slot: cannon_pinion, part_number: "ETA-2824-2-240", interchange_group: "grp:eta2824_2_cannon_240" }
+      - { slot: date_indicator, part_number: "ETA-2824-2-2557", interchange_group: "grp:eta2824_2_date_ring_2557" }
+
+  - canonical_key: "eta:2836-2"
+    display_name: "ETA 2836-2 (Day-Date)"
+    manufacturer: eta
+    reference: "2836-2"
+    aliases:
+      - { alias: "2836-2", kind: official }
+      - { alias: "ETA 2836/2", kind: historical }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "quickset_day", "quickset_date", "hacking"]
+    envelope:
+      diameter_mm: 25.60
+      height_mm: 5.05
+      crown_position_oclock: 3
+      stem_height_mm: 1.80
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 28800
+      jewels: 25
+      power_reserve_h: 38
+      lift_angle_deg: 50.0
+      shock_protection: "Incabloc"
+    production_start: 1982
+    status: current
+    accessibility_score: 0.70
+    relations:
+      - { kind: DERIVED_FROM, to: "eta:2824-2", subtype: modular_addition, modification_degree: 2, confidence: 0.99,
+          notes: "Adds Day mechanism on dial side; shares almost entire base movement & regulating organ with 2824-2" }
+    parts:
+      - { slot: winding_stem, part_number: "ETA-2801-2-401", interchange_group: "grp:eta2824_2_stem_401" }
+      - { slot: setting_lever, part_number: "ETA-2824-2-443", interchange_group: "grp:eta2824_2_setting_lever_443" }
+      - { slot: setting_lever_jumper, part_number: "ETA-2824-2-445", interchange_group: "grp:eta2824_2_jumper_445" }
+      - { slot: sliding_pinion, part_number: "ETA-2824-2-407", interchange_group: "grp:eta2824_2_sliding_pinion_407" }
+      - { slot: mainspring, part_number: "ETA-2824-2-770", interchange_group: "grp:eta2824_mainspring_770" }
+      - { slot: balance_complete, part_number: "ETA-2824-2-721", interchange_group: "grp:eta2824_2_balance_721" }
+      - { slot: balance_staff, part_number: "ETA-2824-2-723", interchange_group: "grp:eta2824_2_staff_723" }
+      - { slot: pallet_fork, part_number: "ETA-2824-2-710", interchange_group: "grp:eta2824_pallet_710" }
+      - { slot: escape_wheel, part_number: "ETA-2824-2-705", interchange_group: "grp:eta2824_escape_705" }
+      - { slot: reversing_wheel, part_number: "ETA-2824-2-1488", interchange_group: "grp:eta2824_2_reversing_1488" }
+
+  - canonical_key: "eta:2801-2"
+    display_name: "ETA 2801-2 (Manual Wind)"
+    manufacturer: eta
+    reference: "2801-2"
+    aliases:
+      - { alias: "2801-2", kind: official }
+    winding: manual
+    functions: ["hours", "minutes", "central_seconds", "hacking"]
+    envelope:
+      diameter_mm: 25.60
+      height_mm: 3.35
+      crown_position_oclock: 3
+      stem_height_mm: 1.80
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: null
+    performance:
+      beat_rate_vph: 28800
+      jewels: 17
+      power_reserve_h: 42
+      lift_angle_deg: 50.0
+      shock_protection: "Incabloc"
+    production_start: 1982
+    status: current
+    accessibility_score: 0.55
+    relations:
+      - { kind: DERIVED_FROM, to: "eta:2824-2", subtype: modified, modification_degree: 2, confidence: 0.95,
+          notes: "Manual-wind no-date sibling; shares stem, keyless works, mainspring, and regulating organ with 2824-2" }
+    parts:
+      - { slot: winding_stem, part_number: "ETA-2801-2-401", interchange_group: "grp:eta2824_2_stem_401" }
+      - { slot: setting_lever, part_number: "ETA-2824-2-443", interchange_group: "grp:eta2824_2_setting_lever_443" }
+      - { slot: sliding_pinion, part_number: "ETA-2824-2-407", interchange_group: "grp:eta2824_2_sliding_pinion_407" }
+      - { slot: mainspring, part_number: "ETA-2824-2-770", interchange_group: "grp:eta2824_mainspring_770" }
+      - { slot: balance_complete, part_number: "ETA-2824-2-721", interchange_group: "grp:eta2824_2_balance_721" }
+      - { slot: balance_staff, part_number: "ETA-2824-2-723", interchange_group: "grp:eta2824_2_staff_723" }
+      - { slot: pallet_fork, part_number: "ETA-2824-2-710", interchange_group: "grp:eta2824_pallet_710" }
+      - { slot: escape_wheel, part_number: "ETA-2824-2-705", interchange_group: "grp:eta2824_escape_705" }
+
+  - canonical_key: "sellita:sw200-1"
+    display_name: "Sellita SW200-1"
+    manufacturer: sellita
+    reference: "SW200-1"
+    aliases:
+      - { alias: "SW200-1", kind: official }
+      - { alias: "SW 200-1", kind: common_misnomer }
+      - { alias: "Sellita SW200", kind: common_misnomer }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "quickset_date", "hacking"]
+    envelope:
+      diameter_mm: 25.60
+      height_mm: 4.60
+      crown_position_oclock: 3
+      stem_height_mm: 1.80
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 28800
+      jewels: 26
+      power_reserve_h: 38
+      lift_angle_deg: 50.0
+      shock_protection: "Incabloc / Novodiac"
+    production_start: 2010
+    status: current
+    accessibility_score: 0.95
+    relations:
+      - { kind: CLONE_OF, to: "eta:2824-2", subtype: drop_in_replacement, modification_degree: 0, confidence: 0.99,
+          notes: "100% drop-in envelope replacement for ETA 2824-2. Keyless works, stem, mainspring, balance & date ring interchange; gear train tooth profile slightly updated in -1" }
+    parts:
+      - { slot: winding_stem, part_number: "SW200-401", interchange_group: "grp:eta2824_2_stem_401" }
+      - { slot: setting_lever, part_number: "SW200-1-443", interchange_group: "grp:eta2824_2_setting_lever_443" }
+      - { slot: setting_lever_jumper, part_number: "SW200-1-445", interchange_group: "grp:eta2824_2_jumper_445" }
+      - { slot: sliding_pinion, part_number: "SW200-1-407", interchange_group: "grp:eta2824_2_sliding_pinion_407" }
+      - { slot: mainspring, part_number: "SW200-770", interchange_group: "grp:eta2824_mainspring_770" }
+      - { slot: balance_complete, part_number: "SW200-721", interchange_group: "grp:eta2824_2_balance_721" }
+      - { slot: balance_staff, part_number: "SW200-723", interchange_group: "grp:eta2824_2_staff_723" }
+      - { slot: date_indicator, part_number: "SW200-2557", interchange_group: "grp:eta2824_2_date_ring_2557" }
+      # Note: SW200-1 pallet fork & escape wheel have slightly revised geometry so they sit in their own SW200 group
+      - { slot: pallet_fork, part_number: "SW200-710", interchange_group: "grp:sw200_pallet_710" }
+      - { slot: escape_wheel, part_number: "SW200-705", interchange_group: "grp:sw200_escape_705" }
+
+  - canonical_key: "stp:1-11"
+    display_name: "STP 1-11"
+    manufacturer: stp
+    reference: "1-11"
+    aliases:
+      - { alias: "STP1-11", kind: official }
+      - { alias: "STP 1-11", kind: official }
+    winding: automatic
+    functions: ["hours", "minutes", "central_seconds", "quickset_date", "hacking"]
+    envelope:
+      diameter_mm: 25.60
+      height_mm: 4.60
+      crown_position_oclock: 3
+      stem_height_mm: 1.80
+      hour_hand_hole_mm: 1.50
+      minute_hand_post_mm: 0.90
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+    performance:
+      beat_rate_vph: 28800
+      jewels: 26
+      power_reserve_h: 44
+      lift_angle_deg: 50.0
+      shock_protection: "Incabloc"
+    production_start: 2012
+    status: current
+    accessibility_score: 0.65
+    relations:
+      - { kind: CLONE_OF, to: "eta:2824-2", subtype: drop_in_replacement, modification_degree: 1, confidence: 0.98,
+          notes: "Drop-in replacement for ETA 2824-2 with thinner barrel arbor for 44h power reserve" }
+    parts:
+      - { slot: winding_stem, part_number: "STP1-11-401", interchange_group: "grp:eta2824_2_stem_401" }
+      - { slot: setting_lever, part_number: "STP1-11-443", interchange_group: "grp:eta2824_2_setting_lever_443" }
+      - { slot: sliding_pinion, part_number: "STP1-11-407", interchange_group: "grp:eta2824_2_sliding_pinion_407" }
+      - { slot: balance_complete, part_number: "STP1-11-721", interchange_group: "grp:eta2824_2_balance_721" }
+      - { slot: date_indicator, part_number: "STP1-11-2557", interchange_group: "grp:eta2824_2_date_ring_2557" }

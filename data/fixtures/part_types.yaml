@@ -1,0 +1,108 @@
+# Universal Watchmaking Part Slots (with Swiss Ebauches CS Dictionary Codes)
+# donor_weight (0.05 to 1.0): How critical & valuable this part is when looking for a donor movement.
+
+part_types:
+  - code: balance_complete
+    cs_number: "721"
+    name: "Balance Complete (with Hairsping & Staff)"
+    category: regulating
+    donor_weight: 1.00
+    is_wear_item: true
+
+  - code: balance_staff
+    cs_number: "723"
+    name: "Balance Staff"
+    category: regulating
+    donor_weight: 0.95
+    is_wear_item: true
+
+  - code: pallet_fork
+    cs_number: "710"
+    name: "Pallet Fork Complete"
+    category: regulating
+    donor_weight: 0.90
+    is_wear_item: false
+
+  - code: escape_wheel
+    cs_number: "705"
+    name: "Escape Wheel & Pinion"
+    category: regulating
+    donor_weight: 0.90
+    is_wear_item: false
+
+  - code: winding_stem
+    cs_number: "401"
+    name: "Winding Stem"
+    category: winding
+    donor_weight: 0.85
+    is_wear_item: true
+
+  - code: mainspring
+    cs_number: "770"
+    name: "Mainspring"
+    category: power
+    donor_weight: 0.80
+    is_wear_item: true
+
+  - code: setting_lever
+    cs_number: "443"
+    name: "Setting Lever (Detent)"
+    category: setting
+    donor_weight: 0.75
+    is_wear_item: true
+
+  - code: setting_lever_jumper
+    cs_number: "445"
+    name: "Setting Lever Jumper"
+    category: setting
+    donor_weight: 0.70
+    is_wear_item: true
+
+  - code: sliding_pinion
+    cs_number: "407"
+    name: "Sliding Pinion (Clutch Wheel)"
+    category: winding
+    donor_weight: 0.70
+    is_wear_item: true
+
+  - code: winding_pinion
+    cs_number: "410"
+    name: "Winding Pinion"
+    category: winding
+    donor_weight: 0.65
+    is_wear_item: false
+
+  - code: reversing_wheel
+    cs_number: "1488"
+    name: "Automatic Reversing Wheel"
+    category: winding
+    donor_weight: 0.75
+    is_wear_item: true
+
+  - code: cannon_pinion
+    cs_number: "240"
+    name: "Cannon Pinion"
+    category: gear_train
+    donor_weight: 0.60
+    is_wear_item: true
+
+  - code: center_wheel
+    cs_number: "206"
+    name: "Center Wheel"
+    category: gear_train
+    donor_weight: 0.55
+    is_wear_item: false
+
+  - code: fourth_wheel
+    cs_number: "220"
+    name: "Fourth Wheel (Sweep Seconds)"
+    category: gear_train
+    donor_weight: 0.55
+    is_wear_item: false
+
+  - code: date_indicator
+    cs_number: "2557"
+    name: "Date Indicator Ring"
+    category: date
+    donor_weight: 0.45
+    is_wear_item: false

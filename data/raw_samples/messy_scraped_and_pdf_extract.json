@@ -1,0 +1,20 @@
+[
+  {
+    "source": "calibercorner + pdf_parts_table",
+    "raw_caliber_name": "Cal. ETA 2824/2 (also called 2824-2)",
+    "raw_manufacturer": "ETA SA",
+    "raw_diameter": "11.5''' (25,60 mm)",
+    "raw_height": "4,6 mm",
+    "raw_frequency": "4 Hz (28.800 A/h)",
+    "raw_hands": "1.50 / 0.90 / 0.25 mm",
+    "raw_jewels": "25 Jewels",
+    "raw_notes": "Automatic movement with date at 3. Cloned by Sellita SW 200-1 and STP 1-11.",
+    "raw_pdf_parts_table": [
+      { "cs_code": "401", "part_name_fr": "Tige de remontoir", "base_caliber_ref": "2801-2" },
+      { "cs_code": "443", "part_name_fr": "Tirette", "base_caliber_ref": "2824-2" },
+      { "cs_code": "710", "part_name_fr": "Ancre montée", "base_caliber_ref": "2824-2" },
+      { "cs_code": "721", "part_name_fr": "Balancier complet", "base_caliber_ref": "2824-2" },
+      { "cs_code": "770", "part_name_fr": "Ressort de barillet", "base_caliber_ref": "2824-2" }
+    ]
+  }
+]

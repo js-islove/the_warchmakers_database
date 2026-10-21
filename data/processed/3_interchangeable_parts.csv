@@ -1,0 +1,93 @@
+caliber_key,caliber_name,cs_code,part_slot,part_number,shared_storage_bin_part_class,donor_weight
+eta:2824,ETA 2824 (Original),401,winding_stem,ETA-2801-401,grp:eta2801_stem_401,0.85
+eta:2824,ETA 2824 (Original),770,mainspring,ETA-2824-770,grp:eta2824_mainspring_770,0.8
+eta:2824,ETA 2824 (Original),721,balance_complete,ETA-2824-721,grp:eta2824_early_balance_721,1.0
+eta:2824,ETA 2824 (Original),710,pallet_fork,ETA-2824-710,grp:eta2824_pallet_710,0.9
+eta:2824,ETA 2824 (Original),705,escape_wheel,ETA-2824-705,grp:eta2824_escape_705,0.9
+eta:2824-2,ETA 2824-2,401,winding_stem,ETA-2801-2-401,grp:eta2824_2_stem_401,0.85
+eta:2824-2,ETA 2824-2,443,setting_lever,ETA-2824-2-443,grp:eta2824_2_setting_lever_443,0.75
+eta:2824-2,ETA 2824-2,445,setting_lever_jumper,ETA-2824-2-445,grp:eta2824_2_jumper_445,0.7
+eta:2824-2,ETA 2824-2,407,sliding_pinion,ETA-2824-2-407,grp:eta2824_2_sliding_pinion_407,0.7
+eta:2824-2,ETA 2824-2,770,mainspring,ETA-2824-2-770,grp:eta2824_mainspring_770,0.8
+eta:2824-2,ETA 2824-2,721,balance_complete,ETA-2824-2-721,grp:eta2824_2_balance_721,1.0
+eta:2824-2,ETA 2824-2,723,balance_staff,ETA-2824-2-723,grp:eta2824_2_staff_723,0.95
+eta:2824-2,ETA 2824-2,710,pallet_fork,ETA-2824-2-710,grp:eta2824_pallet_710,0.9
+eta:2824-2,ETA 2824-2,705,escape_wheel,ETA-2824-2-705,grp:eta2824_escape_705,0.9
+eta:2824-2,ETA 2824-2,1488,reversing_wheel,ETA-2824-2-1488,grp:eta2824_2_reversing_1488,0.75
+eta:2824-2,ETA 2824-2,240,cannon_pinion,ETA-2824-2-240,grp:eta2824_2_cannon_240,0.6
+eta:2824-2,ETA 2824-2,2557,date_indicator,ETA-2824-2-2557,grp:eta2824_2_date_ring_2557,0.45
+eta:2836-2,ETA 2836-2 (Day-Date),401,winding_stem,ETA-2801-2-401,grp:eta2824_2_stem_401,0.85
+eta:2836-2,ETA 2836-2 (Day-Date),443,setting_lever,ETA-2824-2-443,grp:eta2824_2_setting_lever_443,0.75
+eta:2836-2,ETA 2836-2 (Day-Date),445,setting_lever_jumper,ETA-2824-2-445,grp:eta2824_2_jumper_445,0.7
+eta:2836-2,ETA 2836-2 (Day-Date),407,sliding_pinion,ETA-2824-2-407,grp:eta2824_2_sliding_pinion_407,0.7
+eta:2836-2,ETA 2836-2 (Day-Date),770,mainspring,ETA-2824-2-770,grp:eta2824_mainspring_770,0.8
+eta:2836-2,ETA 2836-2 (Day-Date),721,balance_complete,ETA-2824-2-721,grp:eta2824_2_balance_721,1.0
+eta:2836-2,ETA 2836-2 (Day-Date),723,balance_staff,ETA-2824-2-723,grp:eta2824_2_staff_723,0.95
+eta:2836-2,ETA 2836-2 (Day-Date),710,pallet_fork,ETA-2824-2-710,grp:eta2824_pallet_710,0.9
+eta:2836-2,ETA 2836-2 (Day-Date),705,escape_wheel,ETA-2824-2-705,grp:eta2824_escape_705,0.9
+eta:2836-2,ETA 2836-2 (Day-Date),1488,reversing_wheel,ETA-2824-2-1488,grp:eta2824_2_reversing_1488,0.75
+eta:2801-2,ETA 2801-2 (Manual Wind),401,winding_stem,ETA-2801-2-401,grp:eta2824_2_stem_401,0.85
+eta:2801-2,ETA 2801-2 (Manual Wind),443,setting_lever,ETA-2824-2-443,grp:eta2824_2_setting_lever_443,0.75
+eta:2801-2,ETA 2801-2 (Manual Wind),407,sliding_pinion,ETA-2824-2-407,grp:eta2824_2_sliding_pinion_407,0.7
+eta:2801-2,ETA 2801-2 (Manual Wind),770,mainspring,ETA-2824-2-770,grp:eta2824_mainspring_770,0.8
+eta:2801-2,ETA 2801-2 (Manual Wind),721,balance_complete,ETA-2824-2-721,grp:eta2824_2_balance_721,1.0
+eta:2801-2,ETA 2801-2 (Manual Wind),723,balance_staff,ETA-2824-2-723,grp:eta2824_2_staff_723,0.95
+eta:2801-2,ETA 2801-2 (Manual Wind),710,pallet_fork,ETA-2824-2-710,grp:eta2824_pallet_710,0.9
+eta:2801-2,ETA 2801-2 (Manual Wind),705,escape_wheel,ETA-2824-2-705,grp:eta2824_escape_705,0.9
+sellita:sw200-1,Sellita SW200-1,401,winding_stem,SW200-401,grp:eta2824_2_stem_401,0.85
+sellita:sw200-1,Sellita SW200-1,443,setting_lever,SW200-1-443,grp:eta2824_2_setting_lever_443,0.75
+sellita:sw200-1,Sellita SW200-1,445,setting_lever_jumper,SW200-1-445,grp:eta2824_2_jumper_445,0.7
+sellita:sw200-1,Sellita SW200-1,407,sliding_pinion,SW200-1-407,grp:eta2824_2_sliding_pinion_407,0.7
+sellita:sw200-1,Sellita SW200-1,770,mainspring,SW200-770,grp:eta2824_mainspring_770,0.8
+sellita:sw200-1,Sellita SW200-1,721,balance_complete,SW200-721,grp:eta2824_2_balance_721,1.0
+sellita:sw200-1,Sellita SW200-1,723,balance_staff,SW200-723,grp:eta2824_2_staff_723,0.95
+sellita:sw200-1,Sellita SW200-1,2557,date_indicator,SW200-2557,grp:eta2824_2_date_ring_2557,0.45
+sellita:sw200-1,Sellita SW200-1,710,pallet_fork,SW200-710,grp:sw200_pallet_710,0.9
+sellita:sw200-1,Sellita SW200-1,705,escape_wheel,SW200-705,grp:sw200_escape_705,0.9
+stp:1-11,STP 1-11,401,winding_stem,STP1-11-401,grp:eta2824_2_stem_401,0.85
+stp:1-11,STP 1-11,443,setting_lever,STP1-11-443,grp:eta2824_2_setting_lever_443,0.75
+stp:1-11,STP 1-11,407,sliding_pinion,STP1-11-407,grp:eta2824_2_sliding_pinion_407,0.7
+stp:1-11,STP 1-11,721,balance_complete,STP1-11-721,grp:eta2824_2_balance_721,1.0
+stp:1-11,STP 1-11,2557,date_indicator,STP1-11-2557,grp:eta2824_2_date_ring_2557,0.45
+seiko:7s26,Seiko 7S26,721,balance_complete,SII-0310-790,grp:seiko_nh35_balance_721,1.0
+seiko:7s26,Seiko 7S26,710,pallet_fork,SII-0301-890,grp:seiko_nh35_pallet_710,0.9
+seiko:7s26,Seiko 7S26,705,escape_wheel,SII-0251-890,grp:seiko_nh35_escape_705,0.9
+seiko:7s26,Seiko 7S26,770,mainspring,SII-0201-790,grp:seiko_nh35_mainspring_770,0.8
+seiko:nh35a,Seiko NH35A (4R35),401,winding_stem,SII-0351-177,grp:seiko_nh35_stem_401,0.85
+seiko:nh35a,Seiko NH35A (4R35),443,setting_lever,SII-0383-177,grp:seiko_nh35_setting_lever_443,0.75
+seiko:nh35a,Seiko NH35A (4R35),721,balance_complete,SII-0310-177,grp:seiko_nh35_balance_721,1.0
+seiko:nh35a,Seiko NH35A (4R35),710,pallet_fork,SII-0301-890,grp:seiko_nh35_pallet_710,0.9
+seiko:nh35a,Seiko NH35A (4R35),705,escape_wheel,SII-0251-890,grp:seiko_nh35_escape_705,0.9
+seiko:nh35a,Seiko NH35A (4R35),770,mainspring,SII-0201-790,grp:seiko_nh35_mainspring_770,0.8
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),401,winding_stem,SII-0351-177,grp:seiko_nh35_stem_401,0.85
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),443,setting_lever,SII-0383-177,grp:seiko_nh35_setting_lever_443,0.75
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),721,balance_complete,SII-0310-177,grp:seiko_nh35_balance_721,1.0
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),710,pallet_fork,SII-0301-890,grp:seiko_nh35_pallet_710,0.9
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),705,escape_wheel,SII-0251-890,grp:seiko_nh35_escape_705,0.9
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),770,mainspring,SII-0201-790,grp:seiko_nh35_mainspring_770,0.8
+valjoux:7750,ETA / Valjoux 7750,401,winding_stem,ETA-7750-401,grp:7750_stem_401,0.85
+valjoux:7750,ETA / Valjoux 7750,443,setting_lever,ETA-7750-443,grp:7750_setting_lever_443,0.75
+valjoux:7750,ETA / Valjoux 7750,407,sliding_pinion,ETA-7750-407,grp:7750_sliding_pinion_407,0.7
+valjoux:7750,ETA / Valjoux 7750,770,mainspring,ETA-7750-770,grp:7750_mainspring_770,0.8
+valjoux:7750,ETA / Valjoux 7750,721,balance_complete,ETA-7750-721,grp:7750_balance_721,1.0
+valjoux:7750,ETA / Valjoux 7750,723,balance_staff,ETA-7750-723,grp:7750_staff_723,0.95
+valjoux:7750,ETA / Valjoux 7750,710,pallet_fork,ETA-7750-710,grp:7750_pallet_710,0.9
+valjoux:7750,ETA / Valjoux 7750,705,escape_wheel,ETA-7750-705,grp:7750_escape_705,0.9
+sellita:sw500,Sellita SW500,401,winding_stem,SW500-401,grp:7750_stem_401,0.85
+sellita:sw500,Sellita SW500,443,setting_lever,SW500-443,grp:7750_setting_lever_443,0.75
+sellita:sw500,Sellita SW500,407,sliding_pinion,SW500-407,grp:7750_sliding_pinion_407,0.7
+sellita:sw500,Sellita SW500,770,mainspring,SW500-770,grp:7750_mainspring_770,0.8
+sellita:sw500,Sellita SW500,721,balance_complete,SW500-721,grp:7750_balance_721,1.0
+sellita:sw500,Sellita SW500,723,balance_staff,SW500-723,grp:7750_staff_723,0.95
+sellita:sw500,Sellita SW500,710,pallet_fork,SW500-710,grp:7750_pallet_710,0.9
+eta:7753,ETA 7753 (3-6-9 Tricompax),401,winding_stem,ETA-7750-401,grp:7750_stem_401,0.85
+eta:7753,ETA 7753 (3-6-9 Tricompax),770,mainspring,ETA-7750-770,grp:7750_mainspring_770,0.8
+eta:7753,ETA 7753 (3-6-9 Tricompax),721,balance_complete,ETA-7750-721,grp:7750_balance_721,1.0
+eta:7753,ETA 7753 (3-6-9 Tricompax),723,balance_staff,ETA-7750-723,grp:7750_staff_723,0.95
+eta:7753,ETA 7753 (3-6-9 Tricompax),710,pallet_fork,ETA-7750-710,grp:7750_pallet_710,0.9
+eta:7753,ETA 7753 (3-6-9 Tricompax),705,escape_wheel,ETA-7750-705,grp:7750_escape_705,0.9
+iwc:79320,IWC 79320,401,winding_stem,IWC-79320-401,grp:7750_stem_401,0.85
+iwc:79320,IWC 79320,443,setting_lever,IWC-79320-443,grp:7750_setting_lever_443,0.75
+iwc:79320,IWC 79320,407,sliding_pinion,IWC-79320-407,grp:7750_sliding_pinion_407,0.7
+iwc:79320,IWC 79320,710,pallet_fork,IWC-79320-710,grp:7750_pallet_710,0.9
+iwc:79320,IWC 79320,705,escape_wheel,IWC-79320-705,grp:7750_escape_705,0.9

@@ -1,0 +1,162 @@
+# Family 2: Valjoux / ETA 7750 Chronograph Family & Derivatives / Clones
+family:
+  slug: valjoux-7750-family
+  name: "Valjoux / ETA 7750 Chronograph Architecture Family"
+  origin_year: 1973
+
+calibers:
+  - canonical_key: "valjoux:7750"
+    display_name: "ETA / Valjoux 7750"
+    manufacturer: valjoux
+    reference: "7750"
+    aliases:
+      - { alias: "Valjoux 7750", kind: official }
+      - { alias: "ETA 7750", kind: official }
+      - { alias: "7750", kind: common_misnomer }
+    winding: automatic
+    functions: ["hours", "minutes", "small_seconds", "chronograph_60s", "counter_30m", "counter_12h", "day", "date"]
+    envelope:
+      diameter_mm: 30.00
+      height_mm: 7.90
+      crown_position_oclock: 3
+      stem_height_mm: 2.50
+      hour_hand_hole_mm: 2.00
+      minute_hand_post_mm: 1.20
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+      subdial_layout: "6-9-12"
+    performance:
+      beat_rate_vph: 28800
+      jewels: 25
+      power_reserve_h: 48
+      lift_angle_deg: 49.0
+      shock_protection: "Incabloc"
+    production_start: 1973
+    status: current
+    accessibility_score: 0.65
+    parts:
+      - { slot: winding_stem, part_number: "ETA-7750-401", interchange_group: "grp:7750_stem_401" }
+      - { slot: setting_lever, part_number: "ETA-7750-443", interchange_group: "grp:7750_setting_lever_443" }
+      - { slot: sliding_pinion, part_number: "ETA-7750-407", interchange_group: "grp:7750_sliding_pinion_407" }
+      - { slot: mainspring, part_number: "ETA-7750-770", interchange_group: "grp:7750_mainspring_770" }
+      - { slot: balance_complete, part_number: "ETA-7750-721", interchange_group: "grp:7750_balance_721" }
+      - { slot: balance_staff, part_number: "ETA-7750-723", interchange_group: "grp:7750_staff_723" }
+      - { slot: pallet_fork, part_number: "ETA-7750-710", interchange_group: "grp:7750_pallet_710" }
+      - { slot: escape_wheel, part_number: "ETA-7750-705", interchange_group: "grp:7750_escape_705" }
+
+  - canonical_key: "sellita:sw500"
+    display_name: "Sellita SW500"
+    manufacturer: sellita
+    reference: "SW500"
+    aliases:
+      - { alias: "SW500", kind: official }
+      - { alias: "SW 500-1", kind: official }
+    winding: automatic
+    functions: ["hours", "minutes", "small_seconds", "chronograph_60s", "counter_30m", "counter_12h", "day", "date"]
+    envelope:
+      diameter_mm: 30.00
+      height_mm: 7.90
+      crown_position_oclock: 3
+      stem_height_mm: 2.50
+      hour_hand_hole_mm: 2.00
+      minute_hand_post_mm: 1.20
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+      subdial_layout: "6-9-12"
+    performance:
+      beat_rate_vph: 28800
+      jewels: 25
+      power_reserve_h: 48
+      lift_angle_deg: 49.0
+      shock_protection: "Incabloc"
+    production_start: 2012
+    status: current
+    accessibility_score: 0.85
+    relations:
+      - { kind: CLONE_OF, to: "valjoux:7750", subtype: drop_in_replacement, modification_degree: 0, confidence: 0.99,
+          notes: "Direct drop-in replacement for Valjoux 7750; shares winding stem, mainspring, keyless works, and regulating parts" }
+    parts:
+      - { slot: winding_stem, part_number: "SW500-401", interchange_group: "grp:7750_stem_401" }
+      - { slot: setting_lever, part_number: "SW500-443", interchange_group: "grp:7750_setting_lever_443" }
+      - { slot: sliding_pinion, part_number: "SW500-407", interchange_group: "grp:7750_sliding_pinion_407" }
+      - { slot: mainspring, part_number: "SW500-770", interchange_group: "grp:7750_mainspring_770" }
+      - { slot: balance_complete, part_number: "SW500-721", interchange_group: "grp:7750_balance_721" }
+      - { slot: balance_staff, part_number: "SW500-723", interchange_group: "grp:7750_staff_723" }
+      - { slot: pallet_fork, part_number: "SW500-710", interchange_group: "grp:7750_pallet_710" }
+
+  - canonical_key: "eta:7753"
+    display_name: "ETA 7753 (3-6-9 Tricompax)"
+    manufacturer: eta
+    reference: "7753"
+    aliases:
+      - { alias: "Valjoux 7753", kind: common_misnomer }
+      - { alias: "7753", kind: official }
+    winding: automatic
+    functions: ["hours", "minutes", "small_seconds", "chronograph_60s", "counter_30m", "counter_12h", "date"]
+    envelope:
+      diameter_mm: 30.00
+      height_mm: 7.90
+      crown_position_oclock: 3
+      stem_height_mm: 2.50
+      hour_hand_hole_mm: 2.00
+      minute_hand_post_mm: 1.20
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 4
+      subdial_layout: "3-6-9"
+    performance:
+      beat_rate_vph: 28800
+      jewels: 27
+      power_reserve_h: 48
+      lift_angle_deg: 49.0
+      shock_protection: "Incabloc"
+    production_start: 2002
+    status: current
+    accessibility_score: 0.60
+    relations:
+      - { kind: DERIVED_FROM, to: "valjoux:7750", subtype: modified, modification_degree: 2, confidence: 0.99,
+          notes: "Relocates minute counter to 3 o'clock with corrector pusher at 10 o'clock; shares base train, stem, and escapement with 7750" }
+    parts:
+      - { slot: winding_stem, part_number: "ETA-7750-401", interchange_group: "grp:7750_stem_401" }
+      - { slot: mainspring, part_number: "ETA-7750-770", interchange_group: "grp:7750_mainspring_770" }
+      - { slot: balance_complete, part_number: "ETA-7750-721", interchange_group: "grp:7750_balance_721" }
+      - { slot: balance_staff, part_number: "ETA-7750-723", interchange_group: "grp:7750_staff_723" }
+      - { slot: pallet_fork, part_number: "ETA-7750-710", interchange_group: "grp:7750_pallet_710" }
+      - { slot: escape_wheel, part_number: "ETA-7750-705", interchange_group: "grp:7750_escape_705" }
+
+  - canonical_key: "iwc:79320"
+    display_name: "IWC 79320"
+    manufacturer: iwc
+    reference: "79320"
+    aliases:
+      - { alias: "IWC Cal. 79320", kind: official }
+      - { alias: "79320", kind: brand_reference }
+    winding: automatic
+    functions: ["hours", "minutes", "small_seconds", "chronograph_60s", "counter_30m", "counter_12h", "day", "date"]
+    envelope:
+      diameter_mm: 30.00
+      height_mm: 7.90
+      crown_position_oclock: 3
+      stem_height_mm: 2.50
+      hour_hand_hole_mm: 2.00
+      minute_hand_post_mm: 1.20
+      seconds_hand_post_mm: 0.25
+      date_position_oclock: 3
+      subdial_layout: "6-9-12"
+    performance:
+      beat_rate_vph: 28800
+      jewels: 25
+      power_reserve_h: 44
+      lift_angle_deg: 49.0
+      shock_protection: "Incabloc"
+    production_start: 2003
+    status: parts_scarce
+    accessibility_score: 0.15
+    relations:
+      - { kind: DERIVED_FROM, to: "valjoux:7750", subtype: modified, modification_degree: 2, confidence: 0.99,
+          notes: "IWC modified Valjoux 7750; shares winding stem, sliding pinion, setting lever, pallet fork, and escape wheel with standard 7750" }
+    parts:
+      - { slot: winding_stem, part_number: "IWC-79320-401", interchange_group: "grp:7750_stem_401" }
+      - { slot: setting_lever, part_number: "IWC-79320-443", interchange_group: "grp:7750_setting_lever_443" }
+      - { slot: sliding_pinion, part_number: "IWC-79320-407", interchange_group: "grp:7750_sliding_pinion_407" }
+      - { slot: pallet_fork, part_number: "IWC-79320-710", interchange_group: "grp:7750_pallet_710" }
+      - { slot: escape_wheel, part_number: "IWC-79320-705", interchange_group: "grp:7750_escape_705" }

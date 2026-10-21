@@ -1,0 +1,39 @@
+[
+  {
+    "normalized_name": "eta 2824-2",
+    "diameter_mm": 25.6,
+    "ligne_calculated": 11.3,
+    "height_mm": 4.6,
+    "beat_rate_vph": 28800,
+    "hour_hand_mm": 1.5,
+    "minute_hand_mm": 0.9,
+    "seconds_hand_mm": 0.25,
+    "normalized_parts_from_pdf": [
+      {
+        "cs_code": "401",
+        "slot": "winding_stem",
+        "interchange_group_bin": "grp:eta2801_2_winding_stem_401"
+      },
+      {
+        "cs_code": "443",
+        "slot": "setting_lever",
+        "interchange_group_bin": "grp:eta2824_2_setting_lever_443"
+      },
+      {
+        "cs_code": "710",
+        "slot": "pallet_fork",
+        "interchange_group_bin": "grp:eta2824_2_pallet_fork_710"
+      },
+      {
+        "cs_code": "721",
+        "slot": "balance_complete",
+        "interchange_group_bin": "grp:eta2824_2_balance_complete_721"
+      },
+      {
+        "cs_code": "770",
+        "slot": "mainspring",
+        "interchange_group_bin": "grp:eta2824_2_mainspring_770"
+      }
+    ]
+  }
+]

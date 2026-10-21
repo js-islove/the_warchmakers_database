@@ -1,0 +1,14 @@
+canonical_key,display_name,manufacturer,family,winding,diameter_mm,ligne,height_mm,stem_height_mm,crown_oclock,hour_hand_mm,minute_hand_mm,seconds_hand_mm,date_oclock,beat_rate_vph,jewels,power_reserve_h,status,accessibility_score
+eta:2824,ETA 2824 (Original),eta,eta-2824-family,automatic,25.6,11.3,4.6,1.8,3,1.5,0.9,0.25,3,28800,25,38,discontinued,0.25
+eta:2824-2,ETA 2824-2,eta,eta-2824-family,automatic,25.6,11.3,4.6,1.8,3,1.5,0.9,0.25,3,28800,25,38,current,0.75
+eta:2836-2,ETA 2836-2 (Day-Date),eta,eta-2824-family,automatic,25.6,11.3,5.05,1.8,3,1.5,0.9,0.25,3,28800,25,38,current,0.7
+eta:2801-2,ETA 2801-2 (Manual Wind),eta,eta-2824-family,manual,25.6,11.3,3.35,1.8,3,1.5,0.9,0.25,,28800,17,42,current,0.55
+sellita:sw200-1,Sellita SW200-1,sellita,eta-2824-family,automatic,25.6,11.3,4.6,1.8,3,1.5,0.9,0.25,3,28800,26,38,current,0.95
+stp:1-11,STP 1-11,stp,eta-2824-family,automatic,25.6,11.3,4.6,1.8,3,1.5,0.9,0.25,3,28800,26,44,current,0.65
+seiko:7s26,Seiko 7S26,seiko,seiko-7s-nh-family,automatic,27.4,12.1,4.9,1.92,3,1.5,0.9,0.2,3,21600,21,41,discontinued,0.65
+seiko:nh35a,Seiko NH35A (4R35),seiko,seiko-7s-nh-family,automatic,27.4,12.1,5.32,1.92,3,1.5,0.9,0.2,3,21600,24,41,current,0.98
+seiko:nh36a,Seiko NH36A (4R36 Day-Date),seiko,seiko-7s-nh-family,automatic,27.4,12.1,5.32,1.92,3,1.5,0.9,0.2,3,21600,24,41,current,0.98
+valjoux:7750,ETA / Valjoux 7750,valjoux,valjoux-7750-family,automatic,30.0,13.3,7.9,2.5,3,2.0,1.2,0.25,3,28800,25,48,current,0.65
+sellita:sw500,Sellita SW500,sellita,valjoux-7750-family,automatic,30.0,13.3,7.9,2.5,3,2.0,1.2,0.25,3,28800,25,48,current,0.85
+eta:7753,ETA 7753 (3-6-9 Tricompax),eta,valjoux-7750-family,automatic,30.0,13.3,7.9,2.5,3,2.0,1.2,0.25,4,28800,27,48,current,0.6
+iwc:79320,IWC 79320,iwc,valjoux-7750-family,automatic,30.0,13.3,7.9,2.5,3,2.0,1.2,0.25,3,28800,25,44,parts_scarce,0.15
