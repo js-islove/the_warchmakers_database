@@ -104,9 +104,13 @@ def calculate_donor_rankings(
 
             donor_rows.append(
                 {
+                    "target_key": target_key,
+                    "donor_key": donor_key,
                     "broken_target_caliber": cal_by_key[target_key]["display_name"],
                     "recommended_donor_caliber": cal_by_key[donor_key]["display_name"],
                     "final_donor_score": round(final_score, 3),
+                    "weighted_coverage": round(coverage, 4),
+                    "jaccard_score": round(jaccard, 4),
                     "part_coverage_pct": f"{round(coverage * 100, 1)}%",
                     "shared_part_count": len(shared_bins),
                     "donor_accessibility": access,
