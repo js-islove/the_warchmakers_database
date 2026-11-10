@@ -36,7 +36,7 @@ PROCESSED_DIR = ROOT_DIR / "data" / "processed"
 MIGRATION_FILE = ROOT_DIR / "packages" / "db" / "migrations" / "001_init_horo_schema.sql"
 SCRAPED_JSON_FILE = PROCESSED_DIR / "17jewels_synced_movements.json"
 
-DEFAULT_DB_URL = "postgresql://watchmaker:watchmaker_secret@localhost:5432/watchmaker_db"
+DEFAULT_DB_URL = "postgresql://watchmaker:watchmaker_secret@127.0.0.1:5435/watchmaker_db"
 
 
 def get_db_connection(db_url: str):
@@ -228,12 +228,14 @@ def run_loader(db_url: str, dry_run: bool = False) -> None:
     conn.autocommit = False
 
     try:
+        # 1. Execute schema migration and commit so new enum values are registered in pg_enum
+        print(f"Applying migration: {MIGRATION_FILE.name} ...")
+        sql_schema = MIGRATION_FILE.read_text(encoding="utf-8")
         with conn.cursor() as cur:
-            # 1. Execute schema migration
-            print(f"Applying migration: {MIGRATION_FILE.name} ...")
-            sql_schema = MIGRATION_FILE.read_text(encoding="utf-8")
             cur.execute(sql_schema)
+        conn.commit()
 
+        with conn.cursor() as cur:
             # 2. Upsert Manufacturers (Curated + Scraped)
             print("Loading manufacturers...")
             maker_id_by_slug: Dict[str, int] = {}
@@ -322,12 +324,16 @@ def run_loader(db_url: str, dry_run: bool = False) -> None:
 
             # 5. Upsert Curated YAML Calibers
             print("Loading curated YAML calibers...")
+            valid_statuses = {"current", "discontinued", "vintage", "obscure", "parts_scarce"}
             caliber_id_by_key: Dict[str, int] = {}
             for cal in curated_calibers:
                 env = cal.get("envelope", {})
                 perf = cal.get("performance", {})
                 maker_id = maker_id_by_slug[cal["manufacturer"]]
                 family_id = family_id_by_slug.get(cal.get("family_slug", ""))
+                cal_status = cal.get("status", "vintage")
+                if cal_status not in valid_statuses:
+                    cal_status = "vintage"
 
                 cur.execute(
                     """
@@ -402,7 +408,7 @@ def run_loader(db_url: str, dry_run: bool = False) -> None:
                         perf.get("shock_protection"),
                         cal.get("production_start"),
                         cal.get("production_end"),
-                        cal.get("status", "vintage"),
+                        cal_status,
                         cal.get("accessibility_score", 0.5),
                     ),
                 )

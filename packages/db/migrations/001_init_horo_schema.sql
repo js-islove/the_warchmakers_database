@@ -19,9 +19,14 @@ EXCEPTION WHEN duplicate_object THEN NULL; END $$;
 
 DO $$ BEGIN
     CREATE TYPE horo.production_status AS ENUM (
-        'current', 'discontinued', 'vintage', 'obscure'
+        'current', 'discontinued', 'vintage', 'obscure', 'parts_scarce'
     );
-EXCEPTION WHEN duplicate_object THEN NULL; END $$;
+EXCEPTION WHEN duplicate_object THEN
+    BEGIN
+        ALTER TYPE horo.production_status ADD VALUE IF NOT EXISTS 'parts_scarce';
+    EXCEPTION WHEN OTHERS THEN NULL;
+    END;
+END $$;
 
 DO $$ BEGIN
     CREATE TYPE horo.relation_kind AS ENUM (
