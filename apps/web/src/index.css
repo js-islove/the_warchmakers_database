@@ -1,0 +1,53 @@
+@import "@xyflow/react/dist/style.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Clean, subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* React Flow Canvas calm styling */
+.react-flow__background {
+  background-color: #030712 !important;
+}
+
+.react-flow__controls {
+  border: 1px solid #1e293b !important;
+  background: #0f172a !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: #0f172a !important;
+  border-bottom: 1px solid #1e293b !important;
+  color: #64748b !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #1e293b !important;
+  color: #cbd5e1 !important;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
