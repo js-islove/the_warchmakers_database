@@ -317,92 +317,92 @@ def run_sync(
     print(f"[SAVED] Audit changelog updated at: {CHANGELOG_JSON}")
 
 
-def run_offline_diff_simulation() -> None:
-    """
-    Demonstrates the Level-1 and Level-2 Diff Engine offline using sample data
-    (including the Seiko 4206B example) so you can verify how diffing works immediately.
-    """
-    print("=== RUNNING OFFLINE TWO-LEVEL DIFF SIMULATION ===\n")
-    sample_html = """
-    <table>
-      <tr><td>Manufacturer:</td><td>Seiko</td></tr>
-      <tr><td>Caliber:</td><td>4206B</td></tr>
-      <tr><td>Size:</td><td>7 3/4'''</td></tr>
-      <tr><td>A/h:</td><td>21600</td></tr>
-      <tr><td>lift angle:</td><td>49°</td></tr>
-      <tr><td>Number of jewels:</td><td>17</td></tr>
-      <tr><td>Escapement:</td><td>Pallet lever</td></tr>
-      <tr><td>Balance types:</td><td>Glucydur anular balance</td></tr>
-      <tr><td>Shock protection(s):</td><td>Diashock (Seiko)</td></tr>
-      <tr><td>Features:</td><td>SC? QG JG RDR AUT (selfwinding)</td></tr>
-    </table>
-    """
-    index_entry = {
-        "canonical_key": "seiko:4206b",
-        "manufacturer_slug": "seiko",
-        "caliber": "4206B",
-        "url": "https://17jewels.info/movements/s/seiko/seiko-4206b/",
-        "size_raw": "7 3/4'''",
-        "ligne": 7.75,
-        "diameter_mm": 17.48,
-        "jewels": 17,
-        "shock_protection": "Diashock",
-        "features_code": "SC,QG,JG,RDR,AUT",
-        "index_row_hash": "hash_v1_4206b",
-    }
+# def run_offline_diff_simulation() -> None:
+#     """
+#     Demonstrates the Level-1 and Level-2 Diff Engine offline using sample data
+#     (including the Seiko 4206B example) so you can verify how diffing works immediately.
+#     """
+#     print("=== RUNNING OFFLINE TWO-LEVEL DIFF SIMULATION ===\n")
+#     sample_html = """
+#     <table>
+#       <tr><td>Manufacturer:</td><td>Seiko</td></tr>
+#       <tr><td>Caliber:</td><td>4206B</td></tr>
+#       <tr><td>Size:</td><td>7 3/4'''</td></tr>
+#       <tr><td>A/h:</td><td>21600</td></tr>
+#       <tr><td>lift angle:</td><td>49°</td></tr>
+#       <tr><td>Number of jewels:</td><td>17</td></tr>
+#       <tr><td>Escapement:</td><td>Pallet lever</td></tr>
+#       <tr><td>Balance types:</td><td>Glucydur anular balance</td></tr>
+#       <tr><td>Shock protection(s):</td><td>Diashock (Seiko)</td></tr>
+#       <tr><td>Features:</td><td>SC? QG JG RDR AUT (selfwinding)</td></tr>
+#     </table>
+#     """
+#     index_entry = {
+#         "canonical_key": "seiko:4206b",
+#         "manufacturer_slug": "seiko",
+#         "caliber": "4206B",
+#         "url": "https://17jewels.info/movements/s/seiko/seiko-4206b/",
+#         "size_raw": "7 3/4'''",
+#         "ligne": 7.75,
+#         "diameter_mm": 17.48,
+#         "jewels": 17,
+#         "shock_protection": "Diashock",
+#         "features_code": "SC,QG,JG,RDR,AUT",
+#         "index_row_hash": "hash_v1_4206b",
+#     }
 
-    # 1. First sync (Movement is brand new -> ADDED)
-    rec_v1 = parse_17jewels_detail_html(sample_html, index_entry)
-    diff_1 = diff_movement_records(None, rec_v1)
-    print(f"1. First Scrape of {rec_v1['display_name']}:")
-    print(f"   Action: {diff_1['action']} | Diameter: {rec_v1['diameter_mm']} mm | Beat: {rec_v1['beat_rate_vph']} vph | Winding: {rec_v1['winding']}")
+#     # 1. First sync (Movement is brand new -> ADDED)
+#     rec_v1 = parse_17jewels_detail_html(sample_html, index_entry)
+#     diff_1 = diff_movement_records(None, rec_v1)
+#     print(f"1. First Scrape of {rec_v1['display_name']}:")
+#     print(f"   Action: {diff_1['action']} | Diameter: {rec_v1['diameter_mm']} mm | Beat: {rec_v1['beat_rate_vph']} vph | Winding: {rec_v1['winding']}")
 
-    # 2. Second sync when nothing changed -> SKIPPED at Level 1
-    l1_diff = diff_index_rows({rec_v1["url"]: rec_v1}, [index_entry])
-    print(f"\n2. Next Cron Run (No changes on website):")
-    print(f"   Level-1 Diff -> Added: {len(l1_diff['added'])}, Modified: {len(l1_diff['modified'])}, Skipped (Unchanged): {len(l1_diff['unchanged'])}")
+#     # 2. Second sync when nothing changed -> SKIPPED at Level 1
+#     l1_diff = diff_index_rows({rec_v1["url"]: rec_v1}, [index_entry])
+#     print(f"\n2. Next Cron Run (No changes on website):")
+#     print(f"   Level-1 Diff -> Added: {len(l1_diff['added'])}, Modified: {len(l1_diff['modified'])}, Skipped (Unchanged): {len(l1_diff['unchanged'])}")
 
-    # 3. Third sync when website updates jewels from 17 -> 21 and lift angle 49° -> 50°
-    rec_v2 = dict(rec_v1)
-    rec_v2["jewels"] = 21
-    rec_v2["lift_angle_deg"] = 50.0
-    diff_2 = diff_movement_records(rec_v1, rec_v2)
-    print(f"\n3. Cron Run When Website Updates Specs:")
-    print(f"   Action: {diff_2['action']}")
-    print(f"   Exact Field Diff Detected: {json.dumps(diff_2['changed_fields'])}")
+#     # 3. Third sync when website updates jewels from 17 -> 21 and lift angle 49° -> 50°
+#     rec_v2 = dict(rec_v1)
+#     rec_v2["jewels"] = 21
+#     rec_v2["lift_angle_deg"] = 50.0
+#     diff_2 = diff_movement_records(rec_v1, rec_v2)
+#     print(f"\n3. Cron Run When Website Updates Specs:")
+#     print(f"   Action: {diff_2['action']}")
+#     print(f"   Exact Field Diff Detected: {json.dumps(diff_2['changed_fields'])}")
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="On-the-fly 17jewels scraper with 2-level diffing & cron scheduler."
-    )
-    parser.add_argument("--brand", help="Filter by manufacturer slug (e.g. seiko, eta, citizen)")
-    parser.add_argument("--limit", type=int, default=5, help="Max movement pages to scrape in this run (default: 5)")
-    parser.add_argument("--all", action="store_true", help="Scrape all remaining unsynced movements")
-    parser.add_argument("--refresh-index", action="store_true", help="Re-download the main 17jewels index page first")
-    parser.add_argument("--simulate-diff", action="store_true", help="Run an offline demonstration of the 2-level diff engine")
-    parser.add_argument("--cron-hours", type=float, help="Run continuously on a recurring interval (in hours)")
+# if __name__ == "__main__":
+#     parser = argparse.ArgumentParser(
+#         description="On-the-fly 17jewels scraper with 2-level diffing & cron scheduler."
+#     )
+#     parser.add_argument("--brand", help="Filter by manufacturer slug (e.g. seiko, eta, citizen)")
+#     parser.add_argument("--limit", type=int, default=5, help="Max movement pages to scrape in this run (default: 5)")
+#     parser.add_argument("--all", action="store_true", help="Scrape all remaining unsynced movements")
+#     parser.add_argument("--refresh-index", action="store_true", help="Re-download the main 17jewels index page first")
+#     parser.add_argument("--simulate-diff", action="store_true", help="Run an offline demonstration of the 2-level diff engine")
+#     parser.add_argument("--cron-hours", type=float, help="Run continuously on a recurring interval (in hours)")
 
-    args = parser.parse_args()
+#     args = parser.parse_args()
 
-    if args.simulate_diff:
-        run_offline_diff_simulation()
-    elif args.cron_hours:
-        interval_sec = int(args.cron_hours * 3600)
-        print(f"[CRON SCHEDULER] Started! Running sync every {args.cron_hours} hour(s)...")
-        while True:
-            run_sync(
-                brand=args.brand,
-                limit=args.limit,
-                scrape_all=args.all,
-                refresh_index=True,
-            )
-            print(f"[CRON SCHEDULER] Sleeping for {args.cron_hours} hour(s)...")
-            time.sleep(interval_sec)
-    else:
-        run_sync(
-            brand=args.brand,
-            limit=args.limit,
-            scrape_all=args.all,
-            refresh_index=args.refresh_index,
-        )
+#     if args.simulate_diff:
+#         run_offline_diff_simulation()
+#     elif args.cron_hours:
+#         interval_sec = int(args.cron_hours * 3600)
+#         print(f"[CRON SCHEDULER] Started! Running sync every {args.cron_hours} hour(s)...")
+#         while True:
+#             run_sync(
+#                 brand=args.brand,
+#                 limit=args.limit,
+#                 scrape_all=args.all,
+#                 refresh_index=True,
+#             )
+#             print(f"[CRON SCHEDULER] Sleeping for {args.cron_hours} hour(s)...")
+#             time.sleep(interval_sec)
+#     else:
+#         run_sync(
+#             brand=args.brand,
+#             limit=args.limit,
+#             scrape_all=args.all,
+#             refresh_index=args.refresh_index,
+#         )
